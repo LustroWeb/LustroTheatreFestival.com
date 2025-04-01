@@ -1,0 +1,402 @@
+html,
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #360000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    z-index: 3;
+    position: absolute;
+    top: 8px;
+    left: 3px;
+    width: 70px;
+    height: 70px;
+    border-radius: 80%;
+    object-fit: cover;
+}
+
+.menu-container {
+    z-index: 3;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background: rgba(38, 38, 38, 0.567);
+    border-radius: 5px;
+}
+
+.menu-icon {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 23px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.coltina {
+    z-index: 2;
+    position: absolute;
+    top: -17vw;
+    width: 100vw;
+    height: 100vw;
+}
+
+.principal {
+    position: absolute;
+    top: 8vw;
+    width: 40vw;
+    height: 40vw;
+}
+
+.section {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+}
+
+.container {
+    color: #fff;
+    text-align: center;
+    margin-top: 20%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.big-number {
+    font-size: 100px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-inline: 20px;
+}
+
+#sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#sec1,
+#sec2,
+#sec4,
+#sec15 {
+    flex-direction: column;
+}
+
+.container,
+h1 {
+    margin-block: 20px;
+}
+
+#parrafo {
+    text-align: justify;
+    font-size: 30px;
+    padding-inline: 170px;
+}
+
+p {
+    color: white;
+}
+
+.di {
+    margin-top: 10vw;
+    justify-content: center;
+}
+
+.section {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#sec2 {
+    margin-top: 10px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    max-width: 1445px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cuadro {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 35px;
+    background-color: #d22020;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.contenido {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.texto {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.imagen {
+    width: 150px;
+    height: 14vw;
+    background-color: #ccc;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.texto p {
+    font-size: 22px;
+    color: #000000;
+    padding: 10px auto;
+}
+
+#sec3 {
+    width: 900px;
+}
+
+#t1 {
+    font-size: 30px;
+}
+
+#titu4 {
+    margin-top: 10vw;
+}
+
+.Horario {
+    width: 1000px;
+    height: auto;
+    background-image: url("si.png");
+    background-size: cover;
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 40px;
+}
+
+.bellajalte {
+    width: 400px;
+    margin-right: 50px;
+    border-radius: 20px;
+}
+
+.ceuru {
+    width: 400px;
+    border-radius: 20px;
+}
+
+#sec5 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#titu2 {
+    margin-top: 100px;
+}
+
+@media (max-width: 812px) {
+    #titu2 {
+        margin-top: 10vw;
+        font-size: 10vw;
+    }
+    #titu4 {
+        font-size: 10vw;
+    }
+    .weje {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 115vw;
+        overflow: hidden;
+    }
+    .bellajalte {
+        width: 90vw;
+        margin-right: 0px;
+        margin-bottom: 12px;
+        border-radius: 20px;
+    }
+    .ceuru {
+        width: 90vw;
+        border-radius: 20px;
+    }
+    .Horario {
+        width: 90vw;
+    }
+    .principal {
+        position: absolute;
+        top: 8vw;
+        width: 90vw;
+        height: 90vw;
+    }
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 10px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90vw;
+    }
+    .cuadro {
+        padding: 10px;
+    }
+    .titulo {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .texto p {
+        text-align: justify;
+        margin-right: 0;
+        padding: 3px;
+        font-size: 10px;
+    }
+    .imagen {
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-height: 150px;
+        background-color: #ccc;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .texto p {
+        font-size: 16px;
+        color: #000000;
+        padding: 10px;
+    }
+    #parrafo {
+        font-size: 20px;
+        padding-inline: 20px;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 10px;
+        border-radius: 5px;
+        width: 150px;
+    }
+    .menu a {
+        display: block;
+        padding: 10px;
+        color: white;
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px;
+    }
+    #menu-toggle:checked~.menu {
+        display: flex;
+    }
+    .container,
+    .big-number,
+    span {
+        flex-wrap: wrap;
+        position: relative;
+        left: -1%;
+        font-size: 15vw;
+        right: 10px;
+    }
+    h1 {
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 15vw;
+    }
+    #sec1 {
+        margin-top: 10vw;
+    }
+    .hero {
+        min-height: 80vw;
+    }
+}
